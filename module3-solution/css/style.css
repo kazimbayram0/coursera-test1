@@ -1,9 +1,11 @@
 * {
     box-sizing: border-box;
 }
+#text p{ display: inline;}
+body{background-color: rgb(224, 240, 255);}
 
 #header-nav {
-    background-color: #AAA5A5;
+    background-color: #bebaba;
     border-radius: 0;
     border: 0;    
     border: solid black 3px;
@@ -37,7 +39,7 @@
 
 #text {       
     margin: 10px;
-    background-color: #AAA5A5;
+    background-color: #bebaba;
       
     position: relative;
 }
@@ -53,7 +55,7 @@
     color: black;
     
     font-weight: 100;
-    background-color: #AAA5A5;
+    background-color: #bebaba;
 }
 
 #nav-list a:hover {

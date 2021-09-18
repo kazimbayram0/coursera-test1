@@ -13,7 +13,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-  <title>Boostrap Starter Page</title>
+  <title>Boostrap</title>
   
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -22,7 +22,7 @@
 
 <body>
   <header>
-    <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
+    <nav id="header-nav" class="navbar navbar-default navbar-expand-lg navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <div class="navbar-brand">
@@ -31,34 +31,38 @@
             </a>
           </div>
 
-          <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+         
+          <button class="navbar-toggler d-block d-sm-none position-absolute top-0 end-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapsable-nav" aria-controls="collapsable-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggle-on" viewBox="0 0 16 16">
+              <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+            </svg></span>
           </button>
         </div>
 
         <div class="collapse navbar-collapse" id="collapsable-nav">
-          <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
-            <li>
-              <a href="#chicken">Chicken</a>
+          <ul  class="navbar-nav me-auto mb-2 mb-lg-0 d-block d-sm-none ">
+            <li class="nav-item">
+              <a class="nav-link" href="#chicken">Chicken</a>
             </li>
-            <li>
-              <a href="#beef">Beef</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#beef">Beef</a>
             </li>
-            <li>
-              <a href="#sushi">Sushi</a>
+            <li class="nav-item">
+              <a class="nav-link"   href="#sushi">Sushi</a>
             </li>
           </ul>
         </div>
     </nav>
-
+  </header>
     <div  id="top"  class="container-fluid">
-      <p class="text-center">Our Menu</p>
+      <p class="text-center">Menu Of Today</p>
     </div>
-    <div class="col-lg-4 col-md-6 col-xs-12">
-      <div id="text" class="container-fluid">
+    <div class="row">
+
+    <div  class="container-fluid">
+      <div class="row">
+    <div id="menuitem" class="col-lg-4 col-md-6 col-sm-12">
+      <div id="text" class="container">
         <h3 id="chicken" class="text-center">Chicken</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -78,13 +82,14 @@
           in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
           sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing
           elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.          
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.    
+          <a class="visible-xs" href="index.html">Back to top</a>      
         </p>
       </div>
     </div>
 
-    <div class="col-lg-4 col-md-6 col-xs-12">
-    <div id="text" class="container-fluid">
+    <div id="menuitem" class="col-lg-4 col-md-6 col-sm-12">
+    <div id="text" class="container">
       <h3 id="beef" class="text-center">Beef</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -105,13 +110,13 @@
         deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
         ut aliquip ex ea commodo consequat.
-        <a class="visible-xs" href="#top">back to top</a>
+        <a class="visible-xs" href="#top">Back to top</a>
       </p>
     </div>
     </div>
 
-<div class="col-lg-4 col-md-12 col-xs-12">
-    <div id="text" class="container-fluid">
+<div id="menuitem" class="col-lg-4 col-md-12 col-sm-12">
+    <div id="text" class="container">
       <h3 id="sushi"  class="text-center">Sushi</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -132,16 +137,17 @@
         deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
         ut aliquip ex ea commodo consequat.
-        <a class="visible-xs" href="#top">back to top</a>
+        <a class="visible-xs" href="index.html">Back to top</a>
       </p>
     </div>
 </div>
+</div>
+</div>
 
-  </header>
+  
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/bootstrap.js"></script>
-  <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
 
 </body>
